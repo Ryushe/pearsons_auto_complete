@@ -2,3 +2,5 @@ cookies.pkl
 venv/** 
 log*
 todo.md
+profiles/*
+!profiles/
