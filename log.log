@@ -1,0 +1,1162 @@
+INFO: No cookies so save
+INFO: No cookies to load
+INFO: No cookies so save
+INFO: No cookies to load
+INFO: No cookies so save
+INFO: No cookies to load
+INFO: No cookies so save
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 259169 using 0 to output -3
+DEBUG: POST http://localhost:44339/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:44339
+DEBUG: http://localhost:44339 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.6fp1cX"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:44767"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"88875dc5fe15e7408f40bdc61fda61dc"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:44339/session/88875dc5fe15e7408f40bdc61fda61dc/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:44339 "POST /session/88875dc5fe15e7408f40bdc61fda61dc/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 259635 using 0 to output -3
+DEBUG: POST http://localhost:51807/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:51807
+DEBUG: http://localhost:51807 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.E68S3d"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:44099"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6a406f4eebd506400db05fbbef1b8ffa"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:51807/session/6a406f4eebd506400db05fbbef1b8ffa/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:51807 "POST /session/6a406f4eebd506400db05fbbef1b8ffa/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 259980 using 0 to output -3
+DEBUG: POST http://localhost:49969/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:49969
+DEBUG: http://localhost:49969 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.9Mk7L0"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:40863"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8711d8d85c77f20509df6b141a10e4fb"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49969/session/8711d8d85c77f20509df6b141a10e4fb/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:49969 "POST /session/8711d8d85c77f20509df6b141a10e4fb/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 260584 using 0 to output -3
+DEBUG: POST http://localhost:53183/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:53183
+DEBUG: http://localhost:53183 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.NfWdh7"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45609"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7d2dcb6d4c91f4c7f0a47def5accc145"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:53183/session/7d2dcb6d4c91f4c7f0a47def5accc145/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:53183 "POST /session/7d2dcb6d4c91f4c7f0a47def5accc145/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:53183/session/7d2dcb6d4c91f4c7f0a47def5accc145/url {'url': 'https://playit.gg/account/settings/account/verify-email'}
+DEBUG: http://localhost:53183 "POST /session/7d2dcb6d4c91f4c7f0a47def5accc145/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:53183/session/7d2dcb6d4c91f4c7f0a47def5accc145/title {}
+DEBUG: http://localhost:53183 "GET /session/7d2dcb6d4c91f4c7f0a47def5accc145/title HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":"playit.gg"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: No cookies so save
+INFO: No cookies so save
+INFO: No cookies so save
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 262176 using 0 to output -3
+DEBUG: POST http://localhost:59189/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:59189
+DEBUG: http://localhost:59189 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.8ZtfO5"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:36127"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9520d3c053aacbc520c79d0cacfe14f7"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:59189/session/9520d3c053aacbc520c79d0cacfe14f7/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:59189 "POST /session/9520d3c053aacbc520c79d0cacfe14f7/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:59189/session/9520d3c053aacbc520c79d0cacfe14f7/url {'url': 'https://playit.gg/login?redirect=%2Faccount%2Fsettings%2Faccount%2Fverify-email%3Fcode%3Dcbf7'}
+DEBUG: http://localhost:59189 "POST /session/9520d3c053aacbc520c79d0cacfe14f7/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:59189/session/9520d3c053aacbc520c79d0cacfe14f7/title {}
+DEBUG: http://localhost:59189 "GET /session/9520d3c053aacbc520c79d0cacfe14f7/title HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":"playit.gg"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: No cookies so save
+INFO: No cookies so save
+INFO: No cookies so save
+INFO: No cookies so save
+INFO: No cookies so save
+ERROR: Ran out of input
+INFO: No cookies so save
+ERROR: Ran out of input
+INFO: No cookies so save
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 263087 using 0 to output -3
+DEBUG: POST http://localhost:41777/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:41777
+DEBUG: http://localhost:41777 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.dZaLII"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39365"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"040352d29c8c5c2d6a5a62047a1eba17"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:41777/session/040352d29c8c5c2d6a5a62047a1eba17/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:41777 "POST /session/040352d29c8c5c2d6a5a62047a1eba17/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:41777/session/040352d29c8c5c2d6a5a62047a1eba17/url {'url': 'https://playit.gg/login?redirect=%2Faccount%2Fsettings%2Faccount%2Fverify-email%3Fcode%3Dcbf7'}
+DEBUG: http://localhost:41777 "POST /session/040352d29c8c5c2d6a5a62047a1eba17/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:41777/session/040352d29c8c5c2d6a5a62047a1eba17/title {}
+DEBUG: http://localhost:41777 "GET /session/040352d29c8c5c2d6a5a62047a1eba17/title HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":"playit.gg"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: 'Site' object has no attribute 'session_id'
+ERROR: 'Site' object has no attribute 'session_id'
+ERROR: 'Site' object has no attribute 'session_id'
+ERROR: 'Site' object has no attribute 'session_id'
+ERROR: 'Site' object has no attribute 'session_id'
+ERROR: 'Site' object has no attribute 'session_id'
+ERROR: 'Site' object has no attribute 'session_id'
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 264297 using 0 to output -3
+DEBUG: POST http://localhost:50309/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:50309
+DEBUG: http://localhost:50309 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.2E6WwJ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:40825"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"286b3986ff86586fbc20f3950375a907"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:50309 "POST /session/286b3986ff86586fbc20f3950375a907/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: no url in box
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"ADC3182A1824CBFD674756BE728BDA16"},{"domain":"ctclink.okta.com","expiry":1762477758,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1-S75pBs0T6KkFZRMN5Eiqg"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"ADC3182A1824CBFD674756BE728BDA16"},{"domain":"ctclink.okta.com","expiry":1762477758,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1-S75pBs0T6KkFZRMN5Eiqg"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"ADC3182A1824CBFD674756BE728BDA16"},{"domain":"ctclink.okta.com","expiry":1762477758,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1-S75pBs0T6KkFZRMN5Eiqg"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"ADC3182A1824CBFD674756BE728BDA16"},{"domain":"ctclink.okta.com","expiry":1762477758,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1-S75pBs0T6KkFZRMN5Eiqg"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"ADC3182A1824CBFD674756BE728BDA16"},{"domain":"ctclink.okta.com","expiry":1762477758,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1-S75pBs0T6KkFZRMN5Eiqg"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"ADC3182A1824CBFD674756BE728BDA16"},{"domain":"ctclink.okta.com","expiry":1762477758,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1-S75pBs0T6KkFZRMN5Eiqg"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":".playit.gg","expiry":1762477801,"httpOnly":false,"name":"_ga_XZC0D9DN3J","path":"/","sameSite":"Lax","secure":false,"value":"GS1.1.1727917782.1.1.1727917801.0.0.0"},{"domain":"playit.gg","expiry":1728522600,"httpOnly":true,"name":"__session","path":"/","sameSite":"Lax","secure":true,"value":"eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5XMjFzM2NKeFVodXpERGdHRHhveVQyb0RaNUZYRXE4VmtzIn0%3D.fNhbAt%2FRLJo%2BQWwg5yfin7OqnVteQQmfvMaOJ3iZaDA"},{"domain":".playit.gg","expiry":1727917842,"httpOnly":false,"name":"_gat_gtag_UA_159351898_1","path":"/","sameSite":"Lax","secure":false,"value":"1"},{"domain":".playit.gg","expiry":1728004182,"httpOnly":false,"name":"_gid","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.764193920.1727917782"},{"domain":".playit.gg","expiry":1762477782,"httpOnly":false,"name":"_ga","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.171333161.1727917782"}]} | headers=HTTPHeaderDict({'Content-Length': '975', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:50309/session/286b3986ff86586fbc20f3950375a907/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:50309
+DEBUG: http://localhost:50309 "GET /session/286b3986ff86586fbc20f3950375a907/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":".playit.gg","expiry":1762477801,"httpOnly":false,"name":"_ga_XZC0D9DN3J","path":"/","sameSite":"Lax","secure":false,"value":"GS1.1.1727917782.1.1.1727917801.0.0.0"},{"domain":"playit.gg","expiry":1728522600,"httpOnly":true,"name":"__session","path":"/","sameSite":"Lax","secure":true,"value":"eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5XMjFzM2NKeFVodXpERGdHRHhveVQyb0RaNUZYRXE4VmtzIn0%3D.fNhbAt%2FRLJo%2BQWwg5yfin7OqnVteQQmfvMaOJ3iZaDA"},{"domain":".playit.gg","expiry":1727917842,"httpOnly":false,"name":"_gat_gtag_UA_159351898_1","path":"/","sameSite":"Lax","secure":false,"value":"1"},{"domain":".playit.gg","expiry":1728004182,"httpOnly":false,"name":"_gid","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.764193920.1727917782"},{"domain":".playit.gg","expiry":1762477782,"httpOnly":false,"name":"_ga","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.171333161.1727917782"}]} | headers=HTTPHeaderDict({'Content-Length': '975', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 264937 using 0 to output -3
+DEBUG: POST http://localhost:36345/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:36345
+DEBUG: http://localhost:36345 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.8WEQt9"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:35959"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9f1e2531477997eea88a490737e772b8"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477801, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727917782.1.1.1727917801.0.0.0'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728522600, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5X...'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727917842, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728004182, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.764193920.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477782, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.171333161.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477801, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727917782.1.1.1727917801.0.0.0'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728522600, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5X...'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727917842, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728004182, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.764193920.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477782, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.171333161.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477801, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727917782.1.1.1727917801.0.0.0'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728522600, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5X...'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727917842, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728004182, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.764193920.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477782, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.171333161.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477801, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727917782.1.1.1727917801.0.0.0'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728522600, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5X...'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727917842, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728004182, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.764193920.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477782, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.171333161.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477801, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727917782.1.1.1727917801.0.0.0'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728522600, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5X...'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727917842, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728004182, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.764193920.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477782, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.171333161.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477801, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727917782.1.1.1727917801.0.0.0'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728522600, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5X...'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727917842, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728004182, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.764193920.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477782, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.171333161.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477801, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727917782.1.1.1727917801.0.0.0'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728522600, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDdUd0xBQUFBQWdBQUFBRUFBQUFBQUFBQUFLSXFxQy12ck5X...'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727917842, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728004182, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.764193920.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762477782, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.171333161.1727917782'}}
+DEBUG: http://localhost:36345 "POST /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {}
+DEBUG: http://localhost:36345 "GET /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x6495168a902a \u003Cunknown>\n#1 0x64951658f5e0 \u003Cunknown>\n#2 0x6495165651af \u003Cunknown>\n#3 0x64951660c03d \u003Cunknown>\n#4 0x649516622629 \u003Cunknown>\n#5 0x6495166038c3 \u003Cunknown>\n#6 0x6495165d16b3 \u003Cunknown>\n#7 0x6495165d268e \u003Cunknown>\n#8 0x649516873a2b \u003Cunknown>\n#9 0x6495168779b1 \u003Cunknown>\n#10 0x649516860225 \u003Cunknown>\n#11 0x649516878532 \u003Cunknown>\n#12 0x64951684538f \u003Cunknown>\n#13 0x649516897f28 \u003Cunknown>\n#14 0x6495168980f3 \u003Cunknown>\n#15 0x6495168a7e7c \u003Cunknown>\n#16 0x738ec248939d \u003Cunknown>\n#17 0x738ec250e49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x6495168a902a <unknown>
+#1 0x64951658f5e0 <unknown>
+#2 0x6495165651af <unknown>
+#3 0x64951660c03d <unknown>
+#4 0x649516622629 <unknown>
+#5 0x6495166038c3 <unknown>
+#6 0x6495165d16b3 <unknown>
+#7 0x6495165d268e <unknown>
+#8 0x649516873a2b <unknown>
+#9 0x6495168779b1 <unknown>
+#10 0x649516860225 <unknown>
+#11 0x649516878532 <unknown>
+#12 0x64951684538f <unknown>
+#13 0x649516897f28 <unknown>
+#14 0x6495168980f3 <unknown>
+#15 0x6495168a7e7c <unknown>
+#16 0x738ec248939d <unknown>
+#17 0x738ec250e49c <unknown>
+
+DEBUG: GET http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {}
+DEBUG: http://localhost:36345 "GET /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x6495168a902a \u003Cunknown>\n#1 0x64951658f5e0 \u003Cunknown>\n#2 0x6495165651af \u003Cunknown>\n#3 0x64951660c03d \u003Cunknown>\n#4 0x649516622629 \u003Cunknown>\n#5 0x6495166038c3 \u003Cunknown>\n#6 0x6495165d16b3 \u003Cunknown>\n#7 0x6495165d268e \u003Cunknown>\n#8 0x649516873a2b \u003Cunknown>\n#9 0x6495168779b1 \u003Cunknown>\n#10 0x649516860225 \u003Cunknown>\n#11 0x649516878532 \u003Cunknown>\n#12 0x64951684538f \u003Cunknown>\n#13 0x649516897f28 \u003Cunknown>\n#14 0x6495168980f3 \u003Cunknown>\n#15 0x6495168a7e7c \u003Cunknown>\n#16 0x738ec248939d \u003Cunknown>\n#17 0x738ec250e49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x6495168a902a <unknown>
+#1 0x64951658f5e0 <unknown>
+#2 0x6495165651af <unknown>
+#3 0x64951660c03d <unknown>
+#4 0x649516622629 <unknown>
+#5 0x6495166038c3 <unknown>
+#6 0x6495165d16b3 <unknown>
+#7 0x6495165d268e <unknown>
+#8 0x649516873a2b <unknown>
+#9 0x6495168779b1 <unknown>
+#10 0x649516860225 <unknown>
+#11 0x649516878532 <unknown>
+#12 0x64951684538f <unknown>
+#13 0x649516897f28 <unknown>
+#14 0x6495168980f3 <unknown>
+#15 0x6495168a7e7c <unknown>
+#16 0x738ec248939d <unknown>
+#17 0x738ec250e49c <unknown>
+
+DEBUG: GET http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {}
+DEBUG: http://localhost:36345 "GET /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x6495168a902a \u003Cunknown>\n#1 0x64951658f5e0 \u003Cunknown>\n#2 0x6495165651af \u003Cunknown>\n#3 0x64951660c03d \u003Cunknown>\n#4 0x649516622629 \u003Cunknown>\n#5 0x6495166038c3 \u003Cunknown>\n#6 0x6495165d16b3 \u003Cunknown>\n#7 0x6495165d268e \u003Cunknown>\n#8 0x649516873a2b \u003Cunknown>\n#9 0x6495168779b1 \u003Cunknown>\n#10 0x649516860225 \u003Cunknown>\n#11 0x649516878532 \u003Cunknown>\n#12 0x64951684538f \u003Cunknown>\n#13 0x649516897f28 \u003Cunknown>\n#14 0x6495168980f3 \u003Cunknown>\n#15 0x6495168a7e7c \u003Cunknown>\n#16 0x738ec248939d \u003Cunknown>\n#17 0x738ec250e49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x6495168a902a <unknown>
+#1 0x64951658f5e0 <unknown>
+#2 0x6495165651af <unknown>
+#3 0x64951660c03d <unknown>
+#4 0x649516622629 <unknown>
+#5 0x6495166038c3 <unknown>
+#6 0x6495165d16b3 <unknown>
+#7 0x6495165d268e <unknown>
+#8 0x649516873a2b <unknown>
+#9 0x6495168779b1 <unknown>
+#10 0x649516860225 <unknown>
+#11 0x649516878532 <unknown>
+#12 0x64951684538f <unknown>
+#13 0x649516897f28 <unknown>
+#14 0x6495168980f3 <unknown>
+#15 0x6495168a7e7c <unknown>
+#16 0x738ec248939d <unknown>
+#17 0x738ec250e49c <unknown>
+
+DEBUG: GET http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {}
+DEBUG: http://localhost:36345 "GET /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x6495168a902a \u003Cunknown>\n#1 0x64951658f5e0 \u003Cunknown>\n#2 0x6495165651af \u003Cunknown>\n#3 0x64951660c03d \u003Cunknown>\n#4 0x649516622629 \u003Cunknown>\n#5 0x6495166038c3 \u003Cunknown>\n#6 0x6495165d16b3 \u003Cunknown>\n#7 0x6495165d268e \u003Cunknown>\n#8 0x649516873a2b \u003Cunknown>\n#9 0x6495168779b1 \u003Cunknown>\n#10 0x649516860225 \u003Cunknown>\n#11 0x649516878532 \u003Cunknown>\n#12 0x64951684538f \u003Cunknown>\n#13 0x649516897f28 \u003Cunknown>\n#14 0x6495168980f3 \u003Cunknown>\n#15 0x6495168a7e7c \u003Cunknown>\n#16 0x738ec248939d \u003Cunknown>\n#17 0x738ec250e49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x6495168a902a <unknown>
+#1 0x64951658f5e0 <unknown>
+#2 0x6495165651af <unknown>
+#3 0x64951660c03d <unknown>
+#4 0x649516622629 <unknown>
+#5 0x6495166038c3 <unknown>
+#6 0x6495165d16b3 <unknown>
+#7 0x6495165d268e <unknown>
+#8 0x649516873a2b <unknown>
+#9 0x6495168779b1 <unknown>
+#10 0x649516860225 <unknown>
+#11 0x649516878532 <unknown>
+#12 0x64951684538f <unknown>
+#13 0x649516897f28 <unknown>
+#14 0x6495168980f3 <unknown>
+#15 0x6495168a7e7c <unknown>
+#16 0x738ec248939d <unknown>
+#17 0x738ec250e49c <unknown>
+
+DEBUG: GET http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {}
+DEBUG: http://localhost:36345 "GET /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x6495168a902a \u003Cunknown>\n#1 0x64951658f5e0 \u003Cunknown>\n#2 0x6495165651af \u003Cunknown>\n#3 0x64951660c03d \u003Cunknown>\n#4 0x649516622629 \u003Cunknown>\n#5 0x6495166038c3 \u003Cunknown>\n#6 0x6495165d16b3 \u003Cunknown>\n#7 0x6495165d268e \u003Cunknown>\n#8 0x649516873a2b \u003Cunknown>\n#9 0x6495168779b1 \u003Cunknown>\n#10 0x649516860225 \u003Cunknown>\n#11 0x649516878532 \u003Cunknown>\n#12 0x64951684538f \u003Cunknown>\n#13 0x649516897f28 \u003Cunknown>\n#14 0x6495168980f3 \u003Cunknown>\n#15 0x6495168a7e7c \u003Cunknown>\n#16 0x738ec248939d \u003Cunknown>\n#17 0x738ec250e49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x6495168a902a <unknown>
+#1 0x64951658f5e0 <unknown>
+#2 0x6495165651af <unknown>
+#3 0x64951660c03d <unknown>
+#4 0x649516622629 <unknown>
+#5 0x6495166038c3 <unknown>
+#6 0x6495165d16b3 <unknown>
+#7 0x6495165d268e <unknown>
+#8 0x649516873a2b <unknown>
+#9 0x6495168779b1 <unknown>
+#10 0x649516860225 <unknown>
+#11 0x649516878532 <unknown>
+#12 0x64951684538f <unknown>
+#13 0x649516897f28 <unknown>
+#14 0x6495168980f3 <unknown>
+#15 0x6495168a7e7c <unknown>
+#16 0x738ec248939d <unknown>
+#17 0x738ec250e49c <unknown>
+
+DEBUG: GET http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {}
+DEBUG: http://localhost:36345 "GET /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x6495168a902a \u003Cunknown>\n#1 0x64951658f5e0 \u003Cunknown>\n#2 0x6495165651af \u003Cunknown>\n#3 0x64951660c03d \u003Cunknown>\n#4 0x649516622629 \u003Cunknown>\n#5 0x6495166038c3 \u003Cunknown>\n#6 0x6495165d16b3 \u003Cunknown>\n#7 0x6495165d268e \u003Cunknown>\n#8 0x649516873a2b \u003Cunknown>\n#9 0x6495168779b1 \u003Cunknown>\n#10 0x649516860225 \u003Cunknown>\n#11 0x649516878532 \u003Cunknown>\n#12 0x64951684538f \u003Cunknown>\n#13 0x649516897f28 \u003Cunknown>\n#14 0x6495168980f3 \u003Cunknown>\n#15 0x6495168a7e7c \u003Cunknown>\n#16 0x738ec248939d \u003Cunknown>\n#17 0x738ec250e49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x6495168a902a <unknown>
+#1 0x64951658f5e0 <unknown>
+#2 0x6495165651af <unknown>
+#3 0x64951660c03d <unknown>
+#4 0x649516622629 <unknown>
+#5 0x6495166038c3 <unknown>
+#6 0x6495165d16b3 <unknown>
+#7 0x6495165d268e <unknown>
+#8 0x649516873a2b <unknown>
+#9 0x6495168779b1 <unknown>
+#10 0x649516860225 <unknown>
+#11 0x649516878532 <unknown>
+#12 0x64951684538f <unknown>
+#13 0x649516897f28 <unknown>
+#14 0x6495168980f3 <unknown>
+#15 0x6495168a7e7c <unknown>
+#16 0x738ec248939d <unknown>
+#17 0x738ec250e49c <unknown>
+
+DEBUG: GET http://localhost:36345/session/9f1e2531477997eea88a490737e772b8/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:36345
+DEBUG: http://localhost:36345 "GET /session/9f1e2531477997eea88a490737e772b8/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x6495168a902a \u003Cunknown>\n#1 0x64951658f5e0 \u003Cunknown>\n#2 0x6495165651af \u003Cunknown>\n#3 0x64951660c03d \u003Cunknown>\n#4 0x649516622629 \u003Cunknown>\n#5 0x6495166038c3 \u003Cunknown>\n#6 0x6495165d16b3 \u003Cunknown>\n#7 0x6495165d268e \u003Cunknown>\n#8 0x649516873a2b \u003Cunknown>\n#9 0x6495168779b1 \u003Cunknown>\n#10 0x649516860225 \u003Cunknown>\n#11 0x649516878532 \u003Cunknown>\n#12 0x64951684538f \u003Cunknown>\n#13 0x649516897f28 \u003Cunknown>\n#14 0x6495168980f3 \u003Cunknown>\n#15 0x6495168a7e7c \u003Cunknown>\n#16 0x738ec248939d \u003Cunknown>\n#17 0x738ec250e49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x6495168a902a <unknown>
+#1 0x64951658f5e0 <unknown>
+#2 0x6495165651af <unknown>
+#3 0x64951660c03d <unknown>
+#4 0x649516622629 <unknown>
+#5 0x6495166038c3 <unknown>
+#6 0x6495165d16b3 <unknown>
+#7 0x6495165d268e <unknown>
+#8 0x649516873a2b <unknown>
+#9 0x6495168779b1 <unknown>
+#10 0x649516860225 <unknown>
+#11 0x649516878532 <unknown>
+#12 0x64951684538f <unknown>
+#13 0x649516897f28 <unknown>
+#14 0x6495168980f3 <unknown>
+#15 0x6495168a7e7c <unknown>
+#16 0x738ec248939d <unknown>
+#17 0x738ec250e49c <unknown>
+
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 266551 using 0 to output -3
+DEBUG: POST http://localhost:51713/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:51713
+DEBUG: http://localhost:51713 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.VdFtGn"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33731"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"4636659f0bff9bdadb75e97362e1e191"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:51713/session/4636659f0bff9bdadb75e97362e1e191/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:51713 "POST /session/4636659f0bff9bdadb75e97362e1e191/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+DEBUG: GET http://localhost:51713/session/4636659f0bff9bdadb75e97362e1e191/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:51713
+DEBUG: http://localhost:51713 "GET /session/4636659f0bff9bdadb75e97362e1e191/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"999FE9019C282537D9F502EBA33479A5"},{"domain":"ctclink.okta.com","expiry":1762478082,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1idScgcSBQtWIUEz_yA9vYQ"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 267066 using 0 to output -3
+DEBUG: POST http://localhost:48153/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:48153
+DEBUG: http://localhost:48153 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.66ftDW"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34553"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"09243488e34c65c6049170b0b39f348b"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:48153/session/09243488e34c65c6049170b0b39f348b/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:48153 "POST /session/09243488e34c65c6049170b0b39f348b/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+DEBUG: GET http://localhost:48153/session/09243488e34c65c6049170b0b39f348b/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:48153
+DEBUG: http://localhost:48153 "GET /session/09243488e34c65c6049170b0b39f348b/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x56f4861c502a \u003Cunknown>\n#1 0x56f485eab5e0 \u003Cunknown>\n#2 0x56f485e811af \u003Cunknown>\n#3 0x56f485f2803d \u003Cunknown>\n#4 0x56f485f3e629 \u003Cunknown>\n#5 0x56f485f1f8c3 \u003Cunknown>\n#6 0x56f485eed6b3 \u003Cunknown>\n#7 0x56f485eee68e \u003Cunknown>\n#8 0x56f48618fa2b \u003Cunknown>\n#9 0x56f4861939b1 \u003Cunknown>\n#10 0x56f48617c225 \u003Cunknown>\n#11 0x56f486194532 \u003Cunknown>\n#12 0x56f48616138f \u003Cunknown>\n#13 0x56f4861b3f28 \u003Cunknown>\n#14 0x56f4861b40f3 \u003Cunknown>\n#15 0x56f4861c3e7c \u003Cunknown>\n#16 0x7070241a039d \u003Cunknown>\n#17 0x70702422549c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x56f4861c502a <unknown>
+#1 0x56f485eab5e0 <unknown>
+#2 0x56f485e811af <unknown>
+#3 0x56f485f2803d <unknown>
+#4 0x56f485f3e629 <unknown>
+#5 0x56f485f1f8c3 <unknown>
+#6 0x56f485eed6b3 <unknown>
+#7 0x56f485eee68e <unknown>
+#8 0x56f48618fa2b <unknown>
+#9 0x56f4861939b1 <unknown>
+#10 0x56f48617c225 <unknown>
+#11 0x56f486194532 <unknown>
+#12 0x56f48616138f <unknown>
+#13 0x56f4861b3f28 <unknown>
+#14 0x56f4861b40f3 <unknown>
+#15 0x56f4861c3e7c <unknown>
+#16 0x7070241a039d <unknown>
+#17 0x70702422549c <unknown>
+
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 267732 using 0 to output -3
+DEBUG: POST http://localhost:34251/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:34251
+DEBUG: http://localhost:34251 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.guQwU0"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34707"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"29938db29c4350aa870f2c028e67b18e"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:34251/session/29938db29c4350aa870f2c028e67b18e/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:34251 "POST /session/29938db29c4350aa870f2c028e67b18e/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: {e}
+ERROR: {e}
+ERROR: {e}
+DEBUG: GET http://localhost:34251/session/29938db29c4350aa870f2c028e67b18e/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:34251
+DEBUG: http://localhost:34251 "GET /session/29938db29c4350aa870f2c028e67b18e/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"9911E8ABFE277BA8FC92B5C95CED7BDF"},{"domain":"ctclink.okta.com","expiry":1762478226,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI1OVDjA5rZTR2XmLCn_8RqZA"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 268419 using 0 to output -3
+DEBUG: POST http://localhost:48283/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:48283
+DEBUG: http://localhost:48283 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.3Tl3Ve"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33569"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d4494e02ace086610502417e004c53b2"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:48283/session/d4494e02ace086610502417e004c53b2/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:48283 "POST /session/d4494e02ace086610502417e004c53b2/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+INFO: no url in box
+DEBUG: GET http://localhost:48283/session/d4494e02ace086610502417e004c53b2/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:48283
+DEBUG: http://localhost:48283 "GET /session/d4494e02ace086610502417e004c53b2/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":"ctclink.okta.com","httpOnly":true,"name":"JSESSIONID","path":"/","sameSite":"Lax","secure":true,"value":"B971A283D150AE012D948680B83B202A"},{"domain":"ctclink.okta.com","expiry":1762478334,"httpOnly":true,"name":"DT","path":"/","sameSite":"None","secure":true,"value":"DI16rwPTsRZRSKHYLnkPsxk3g"}]} | headers=HTTPHeaderDict({'Content-Length': '319', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 268747 using 0 to output -3
+DEBUG: POST http://localhost:36475/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:36475
+DEBUG: http://localhost:36475 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.kaguBx"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39141"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"3afe2b608e56cffc51fa7a500fd1b398"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36475/session/3afe2b608e56cffc51fa7a500fd1b398/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:36475 "POST /session/3afe2b608e56cffc51fa7a500fd1b398/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:36475/session/3afe2b608e56cffc51fa7a500fd1b398/url {'url': ''}
+DEBUG: http://localhost:36475 "POST /session/3afe2b608e56cffc51fa7a500fd1b398/url HTTP/11" 400 0
+DEBUG: Remote response: status=400 | data={"value":{"error":"invalid argument","message":"invalid argument\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x637d476ee02a \u003Cunknown>\n#1 0x637d473d443d \u003Cunknown>\n#2 0x637d473bbda7 \u003Cunknown>\n#3 0x637d473ba3e8 \u003Cunknown>\n#4 0x637d473baada \u003Cunknown>\n#5 0x637d473d6f41 \u003Cunknown>\n#6 0x637d474688c5 \u003Cunknown>\n#7 0x637d47448b22 \u003Cunknown>\n#8 0x637d47467d7d \u003Cunknown>\n#9 0x637d474488c3 \u003Cunknown>\n#10 0x637d474166b3 \u003Cunknown>\n#11 0x637d4741768e \u003Cunknown>\n#12 0x637d476b8a2b \u003Cunknown>\n#13 0x637d476bc9b1 \u003Cunknown>\n#14 0x637d476a5225 \u003Cunknown>\n#15 0x637d476bd532 \u003Cunknown>\n#16 0x637d4768a38f \u003Cunknown>\n#17 0x637d476dcf28 \u003Cunknown>\n#18 0x637d476dd0f3 \u003Cunknown>\n#19 0x637d476ece7c \u003Cunknown>\n#20 0x7e9528b0d39d \u003Cunknown>\n#21 0x7e9528b9249c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: invalid argument
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x637d476ee02a <unknown>
+#1 0x637d473d443d <unknown>
+#2 0x637d473bbda7 <unknown>
+#3 0x637d473ba3e8 <unknown>
+#4 0x637d473baada <unknown>
+#5 0x637d473d6f41 <unknown>
+#6 0x637d474688c5 <unknown>
+#7 0x637d47448b22 <unknown>
+#8 0x637d47467d7d <unknown>
+#9 0x637d474488c3 <unknown>
+#10 0x637d474166b3 <unknown>
+#11 0x637d4741768e <unknown>
+#12 0x637d476b8a2b <unknown>
+#13 0x637d476bc9b1 <unknown>
+#14 0x637d476a5225 <unknown>
+#15 0x637d476bd532 <unknown>
+#16 0x637d4768a38f <unknown>
+#17 0x637d476dcf28 <unknown>
+#18 0x637d476dd0f3 <unknown>
+#19 0x637d476ece7c <unknown>
+#20 0x7e9528b0d39d <unknown>
+#21 0x7e9528b9249c <unknown>
+
+DEBUG: POST http://localhost:36475/session/3afe2b608e56cffc51fa7a500fd1b398/url {'url': 'https://playit.gg'}
+DEBUG: http://localhost:36475 "POST /session/3afe2b608e56cffc51fa7a500fd1b398/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:36475/session/3afe2b608e56cffc51fa7a500fd1b398/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:36475
+DEBUG: http://localhost:36475 "GET /session/3afe2b608e56cffc51fa7a500fd1b398/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x637d476ee02a \u003Cunknown>\n#1 0x637d473d45e0 \u003Cunknown>\n#2 0x637d473aa1af \u003Cunknown>\n#3 0x637d4745103d \u003Cunknown>\n#4 0x637d47467629 \u003Cunknown>\n#5 0x637d474488c3 \u003Cunknown>\n#6 0x637d474166b3 \u003Cunknown>\n#7 0x637d4741768e \u003Cunknown>\n#8 0x637d476b8a2b \u003Cunknown>\n#9 0x637d476bc9b1 \u003Cunknown>\n#10 0x637d476a5225 \u003Cunknown>\n#11 0x637d476bd532 \u003Cunknown>\n#12 0x637d4768a38f \u003Cunknown>\n#13 0x637d476dcf28 \u003Cunknown>\n#14 0x637d476dd0f3 \u003Cunknown>\n#15 0x637d476ece7c \u003Cunknown>\n#16 0x7e9528b0d39d \u003Cunknown>\n#17 0x7e9528b9249c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x637d476ee02a <unknown>
+#1 0x637d473d45e0 <unknown>
+#2 0x637d473aa1af <unknown>
+#3 0x637d4745103d <unknown>
+#4 0x637d47467629 <unknown>
+#5 0x637d474488c3 <unknown>
+#6 0x637d474166b3 <unknown>
+#7 0x637d4741768e <unknown>
+#8 0x637d476b8a2b <unknown>
+#9 0x637d476bc9b1 <unknown>
+#10 0x637d476a5225 <unknown>
+#11 0x637d476bd532 <unknown>
+#12 0x637d4768a38f <unknown>
+#13 0x637d476dcf28 <unknown>
+#14 0x637d476dd0f3 <unknown>
+#15 0x637d476ece7c <unknown>
+#16 0x7e9528b0d39d <unknown>
+#17 0x7e9528b9249c <unknown>
+
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 269029 using 0 to output -3
+DEBUG: POST http://localhost:38671/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:38671
+DEBUG: http://localhost:38671 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.kN1hc6"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45017"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"bc9e8a372abe30e090beb464660e86ed"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:38671/session/bc9e8a372abe30e090beb464660e86ed/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:38671 "POST /session/bc9e8a372abe30e090beb464660e86ed/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:38671/session/bc9e8a372abe30e090beb464660e86ed/url {'url': 'https://playit.gg'}
+DEBUG: http://localhost:38671 "POST /session/bc9e8a372abe30e090beb464660e86ed/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:38671/session/bc9e8a372abe30e090beb464660e86ed/cookie {}
+DEBUG: http://localhost:38671 "GET /session/bc9e8a372abe30e090beb464660e86ed/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":".playit.gg","expiry":1762478436,"httpOnly":false,"name":"_ga_XZC0D9DN3J","path":"/","sameSite":"Lax","secure":false,"value":"GS1.1.1727918421.1.1.1727918436.0.0.0"},{"domain":"playit.gg","expiry":1728523235,"httpOnly":true,"name":"__session","path":"/","sameSite":"Lax","secure":true,"value":"eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUDl1dV9BQUFBQWdBQUFBRUFBQUFBQUFBQUFNcGxFMU0xQ3BCVVI5bjFNNExVbWxZMlZvMGpPMzIxMDktZmt1NzVpZnhNIn0%3D.O%2BlcqxZeAhn5a5NcJbaCxEt7iCMCPQa0FJSIKZBmxnA"},{"domain":".playit.gg","expiry":1727918481,"httpOnly":false,"name":"_gat_gtag_UA_159351898_1","path":"/","sameSite":"Lax","secure":false,"value":"1"},{"domain":".playit.gg","expiry":1728004821,"httpOnly":false,"name":"_gid","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.1419211750.1727918421"},{"domain":".playit.gg","expiry":1762478421,"httpOnly":false,"name":"_ga","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.372671677.1727918421"}]} | headers=HTTPHeaderDict({'Content-Length': '974', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:38671/session/bc9e8a372abe30e090beb464660e86ed/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:38671
+DEBUG: http://localhost:38671 "GET /session/bc9e8a372abe30e090beb464660e86ed/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x5923778e902a \u003Cunknown>\n#1 0x5923775cf5e0 \u003Cunknown>\n#2 0x5923775a51af \u003Cunknown>\n#3 0x59237764c03d \u003Cunknown>\n#4 0x592377662629 \u003Cunknown>\n#5 0x5923776438c3 \u003Cunknown>\n#6 0x5923776116b3 \u003Cunknown>\n#7 0x59237761268e \u003Cunknown>\n#8 0x5923778b3a2b \u003Cunknown>\n#9 0x5923778b79b1 \u003Cunknown>\n#10 0x5923778a0225 \u003Cunknown>\n#11 0x5923778b8532 \u003Cunknown>\n#12 0x59237788538f \u003Cunknown>\n#13 0x5923778d7f28 \u003Cunknown>\n#14 0x5923778d80f3 \u003Cunknown>\n#15 0x5923778e7e7c \u003Cunknown>\n#16 0x7316d1b6b39d \u003Cunknown>\n#17 0x7316d1bf049c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x5923778e902a <unknown>
+#1 0x5923775cf5e0 <unknown>
+#2 0x5923775a51af <unknown>
+#3 0x59237764c03d <unknown>
+#4 0x592377662629 <unknown>
+#5 0x5923776438c3 <unknown>
+#6 0x5923776116b3 <unknown>
+#7 0x59237761268e <unknown>
+#8 0x5923778b3a2b <unknown>
+#9 0x5923778b79b1 <unknown>
+#10 0x5923778a0225 <unknown>
+#11 0x5923778b8532 <unknown>
+#12 0x59237788538f <unknown>
+#13 0x5923778d7f28 <unknown>
+#14 0x5923778d80f3 <unknown>
+#15 0x5923778e7e7c <unknown>
+#16 0x7316d1b6b39d <unknown>
+#17 0x7316d1bf049c <unknown>
+
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 269700 using 0 to output -3
+DEBUG: POST http://localhost:34595/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:34595
+DEBUG: http://localhost:34595 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.1o6KpQ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:42799"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6c6647ac301bb98d9f695996d96dfedc"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:34595/session/6c6647ac301bb98d9f695996d96dfedc/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:34595 "POST /session/6c6647ac301bb98d9f695996d96dfedc/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:34595/session/6c6647ac301bb98d9f695996d96dfedc/url {'url': 'https://playit.gg'}
+DEBUG: http://localhost:34595 "POST /session/6c6647ac301bb98d9f695996d96dfedc/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Ran out of input
+DEBUG: GET http://localhost:34595/session/6c6647ac301bb98d9f695996d96dfedc/cookie {}
+DEBUG: http://localhost:34595 "GET /session/6c6647ac301bb98d9f695996d96dfedc/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":".playit.gg","expiry":1728004881,"httpOnly":false,"name":"_gid","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.529999749.1727918481"},{"domain":".playit.gg","expiry":1762478481,"httpOnly":false,"name":"_ga","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.1576031342.1727918481"},{"domain":".playit.gg","expiry":1762478481,"httpOnly":false,"name":"_ga_XZC0D9DN3J","path":"/","sameSite":"Lax","secure":false,"value":"GS1.1.1727918481.1.0.1727918481.0.0.0"}]} | headers=HTTPHeaderDict({'Content-Length': '497', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:34595/session/6c6647ac301bb98d9f695996d96dfedc/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:34595
+DEBUG: http://localhost:34595 "GET /session/6c6647ac301bb98d9f695996d96dfedc/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x5bf1c9c0f02a \u003Cunknown>\n#1 0x5bf1c98f55e0 \u003Cunknown>\n#2 0x5bf1c98cb1af \u003Cunknown>\n#3 0x5bf1c997203d \u003Cunknown>\n#4 0x5bf1c9988629 \u003Cunknown>\n#5 0x5bf1c99698c3 \u003Cunknown>\n#6 0x5bf1c99376b3 \u003Cunknown>\n#7 0x5bf1c993868e \u003Cunknown>\n#8 0x5bf1c9bd9a2b \u003Cunknown>\n#9 0x5bf1c9bdd9b1 \u003Cunknown>\n#10 0x5bf1c9bc6225 \u003Cunknown>\n#11 0x5bf1c9bde532 \u003Cunknown>\n#12 0x5bf1c9bab38f \u003Cunknown>\n#13 0x5bf1c9bfdf28 \u003Cunknown>\n#14 0x5bf1c9bfe0f3 \u003Cunknown>\n#15 0x5bf1c9c0de7c \u003Cunknown>\n#16 0x7b0f461dc39d \u003Cunknown>\n#17 0x7b0f4626149c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x5bf1c9c0f02a <unknown>
+#1 0x5bf1c98f55e0 <unknown>
+#2 0x5bf1c98cb1af <unknown>
+#3 0x5bf1c997203d <unknown>
+#4 0x5bf1c9988629 <unknown>
+#5 0x5bf1c99698c3 <unknown>
+#6 0x5bf1c99376b3 <unknown>
+#7 0x5bf1c993868e <unknown>
+#8 0x5bf1c9bd9a2b <unknown>
+#9 0x5bf1c9bdd9b1 <unknown>
+#10 0x5bf1c9bc6225 <unknown>
+#11 0x5bf1c9bde532 <unknown>
+#12 0x5bf1c9bab38f <unknown>
+#13 0x5bf1c9bfdf28 <unknown>
+#14 0x5bf1c9bfe0f3 <unknown>
+#15 0x5bf1c9c0de7c <unknown>
+#16 0x7b0f461dc39d <unknown>
+#17 0x7b0f4626149c <unknown>
+
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "linux", arch: "x86_64", lang: "python", selenium_version: "4.25" }
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 272041 using 0 to output -3
+DEBUG: POST http://localhost:38957/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:38957
+DEBUG: http://localhost:38957 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.pxGTRw"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:40045"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"a52f56b5315429516b212cd2f86778f5"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:38957/session/a52f56b5315429516b212cd2f86778f5/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:38957 "POST /session/a52f56b5315429516b212cd2f86778f5/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:38957/session/a52f56b5315429516b212cd2f86778f5/url {'url': ''}
+DEBUG: http://localhost:38957 "POST /session/a52f56b5315429516b212cd2f86778f5/url HTTP/11" 400 0
+DEBUG: Remote response: status=400 | data={"value":{"error":"invalid argument","message":"invalid argument\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x5a5e33de202a \u003Cunknown>\n#1 0x5a5e33ac843d \u003Cunknown>\n#2 0x5a5e33aafda7 \u003Cunknown>\n#3 0x5a5e33aae3e8 \u003Cunknown>\n#4 0x5a5e33aaeada \u003Cunknown>\n#5 0x5a5e33acaf41 \u003Cunknown>\n#6 0x5a5e33b5c8c5 \u003Cunknown>\n#7 0x5a5e33b3cb22 \u003Cunknown>\n#8 0x5a5e33b5bd7d \u003Cunknown>\n#9 0x5a5e33b3c8c3 \u003Cunknown>\n#10 0x5a5e33b0a6b3 \u003Cunknown>\n#11 0x5a5e33b0b68e \u003Cunknown>\n#12 0x5a5e33daca2b \u003Cunknown>\n#13 0x5a5e33db09b1 \u003Cunknown>\n#14 0x5a5e33d99225 \u003Cunknown>\n#15 0x5a5e33db1532 \u003Cunknown>\n#16 0x5a5e33d7e38f \u003Cunknown>\n#17 0x5a5e33dd0f28 \u003Cunknown>\n#18 0x5a5e33dd10f3 \u003Cunknown>\n#19 0x5a5e33de0e7c \u003Cunknown>\n#20 0x7ef27adfd39d \u003Cunknown>\n#21 0x7ef27ae8249c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: invalid argument
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x5a5e33de202a <unknown>
+#1 0x5a5e33ac843d <unknown>
+#2 0x5a5e33aafda7 <unknown>
+#3 0x5a5e33aae3e8 <unknown>
+#4 0x5a5e33aaeada <unknown>
+#5 0x5a5e33acaf41 <unknown>
+#6 0x5a5e33b5c8c5 <unknown>
+#7 0x5a5e33b3cb22 <unknown>
+#8 0x5a5e33b5bd7d <unknown>
+#9 0x5a5e33b3c8c3 <unknown>
+#10 0x5a5e33b0a6b3 <unknown>
+#11 0x5a5e33b0b68e <unknown>
+#12 0x5a5e33daca2b <unknown>
+#13 0x5a5e33db09b1 <unknown>
+#14 0x5a5e33d99225 <unknown>
+#15 0x5a5e33db1532 <unknown>
+#16 0x5a5e33d7e38f <unknown>
+#17 0x5a5e33dd0f28 <unknown>
+#18 0x5a5e33dd10f3 <unknown>
+#19 0x5a5e33de0e7c <unknown>
+#20 0x7ef27adfd39d <unknown>
+#21 0x7ef27ae8249c <unknown>
+
+DEBUG: GET http://localhost:38957/session/a52f56b5315429516b212cd2f86778f5/cookie {}
+DEBUG: http://localhost:38957 "GET /session/a52f56b5315429516b212cd2f86778f5/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":".playit.gg","expiry":1762479926,"httpOnly":false,"name":"_ga_XZC0D9DN3J","path":"/","sameSite":"Lax","secure":false,"value":"GS1.1.1727919905.1.1.1727919926.0.0.0"},{"domain":"playit.gg","expiry":1728524725,"httpOnly":true,"name":"__session","path":"/","sameSite":"Lax","secure":true,"value":"eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUURhcHVBQUFBQWdBQUFBRUFBQUFBQUFBQUFFd1JDbHhTYVU1V2ZtSE1jcDRCY2RVRTVjcmlJMmNaUGdGd3BGLWs5RXBiIn0%3D.vkL1WyFgbrX0oXAYMyUqNaBzNSBrNWt04OqeSgaQFYc"},{"domain":".playit.gg","expiry":1727919965,"httpOnly":false,"name":"_gat_gtag_UA_159351898_1","path":"/","sameSite":"Lax","secure":false,"value":"1"},{"domain":".playit.gg","expiry":1728006305,"httpOnly":false,"name":"_gid","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.1300214351.1727919905"},{"domain":".playit.gg","expiry":1762479905,"httpOnly":false,"name":"_ga","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.1061929347.1727919905"}]} | headers=HTTPHeaderDict({'Content-Length': '973', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:38957/session/a52f56b5315429516b212cd2f86778f5/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:38957
+DEBUG: http://localhost:38957 "GET /session/a52f56b5315429516b212cd2f86778f5/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":[{"domain":".playit.gg","expiry":1762479926,"httpOnly":false,"name":"_ga_XZC0D9DN3J","path":"/","sameSite":"Lax","secure":false,"value":"GS1.1.1727919905.1.1.1727919926.0.0.0"},{"domain":"playit.gg","expiry":1728524725,"httpOnly":true,"name":"__session","path":"/","sameSite":"Lax","secure":true,"value":"eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUURhcHVBQUFBQWdBQUFBRUFBQUFBQUFBQUFFd1JDbHhTYVU1V2ZtSE1jcDRCY2RVRTVjcmlJMmNaUGdGd3BGLWs5RXBiIn0%3D.vkL1WyFgbrX0oXAYMyUqNaBzNSBrNWt04OqeSgaQFYc"},{"domain":".playit.gg","expiry":1727919965,"httpOnly":false,"name":"_gat_gtag_UA_159351898_1","path":"/","sameSite":"Lax","secure":false,"value":"1"},{"domain":".playit.gg","expiry":1728006305,"httpOnly":false,"name":"_gid","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.1300214351.1727919905"},{"domain":".playit.gg","expiry":1762479905,"httpOnly":false,"name":"_ga","path":"/","sameSite":"Lax","secure":false,"value":"GA1.2.1061929347.1727919905"}]} | headers=HTTPHeaderDict({'Content-Length': '973', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: Cookies saved to cookies.pkl
+DEBUG: Selenium Manager binary found at: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG: Executing process: /home/ryushe/code/fucktheschool/venv/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG: chromedriver not found in PATH
+DEBUG: chrome not found in PATH
+DEBUG: chrome not found in the system
+DEBUG: Required browser: chrome 129.0.6668.89
+DEBUG: chrome 129.0.6668.89 already exists
+DEBUG: chrome 129.0.6668.89 is available at /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Required driver: chromedriver 129.0.6668.89
+DEBUG: chromedriver 129.0.6668.89 already in the cache
+DEBUG: Driver path: /home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver
+DEBUG: Browser path: /home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome
+DEBUG: Started executable: `/home/ryushe/.cache/selenium/chromedriver/linux64/129.0.6668.89/chromedriver` in a child process with pid: 272696 using 0 to output -3
+DEBUG: POST http://localhost:45673/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/home/ryushe/.cache/selenium/chrome/linux64/129.0.6668.89/chrome', 'args': ['--log-level=3', '--disable-popup-blocking']}}}}
+DEBUG: Starting new HTTP connection (1): localhost:45673
+DEBUG: http://localhost:45673 "POST /session HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.89","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"/tmp/.org.chromium.Chromium.PJDaUF"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34055"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9add8cdb0a0bc888c0c70059de2f2217"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/url {'url': 'https://ctclink.okta.com/app/ctclink_canvaswenatcheevalleycollege_1/exk8ykhtdcsBEjxNz4x7/sso/saml?SA...'}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/url {'url': 'https://playit.gg'}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/url HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762479926, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727919905.1.1.1727919926.0.0.0'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728524725, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUURhcHVBQUFBQWdBQUFBRUFBQUFBQUFBQUFFd1JDbHhTYVU1...'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727919965, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728006305, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.1300214351.1727919905'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762479905, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.1061929347.1727919905'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762479926, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727919905.1.1.1727919926.0.0.0'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728524725, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUURhcHVBQUFBQWdBQUFBRUFBQUFBQUFBQUFFd1JDbHhTYVU1...'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727919965, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728006305, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.1300214351.1727919905'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762479905, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.1061929347.1727919905'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762479926, 'httpOnly': False, 'name': '_ga_XZC0D9DN3J', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GS1.1.1727919905.1.1.1727919926.0.0.0'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': 'playit.gg', 'expiry': 1728524725, 'httpOnly': True, 'name': '__session', 'path': '/', 'sameSite': 'Lax', 'secure': True, 'value': 'eyJzZXNzaW9uIjoiQUFBQUFRQUFBQUFBQUFBQUFBeUVGZ0FBQVpKUURhcHVBQUFBQWdBQUFBRUFBQUFBQUFBQUFFd1JDbHhTYVU1...'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1727919965, 'httpOnly': False, 'name': '_gat_gtag_UA_159351898_1', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': '1'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1728006305, 'httpOnly': False, 'name': '_gid', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.1300214351.1727919905'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {'cookie': {'domain': '.playit.gg', 'expiry': 1762479905, 'httpOnly': False, 'name': '_ga', 'path': '/', 'sameSite': 'Lax', 'secure': False, 'value': 'GA1.2.1061929347.1727919905'}}
+DEBUG: http://localhost:45673 "POST /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 200 0
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: GET http://localhost:45673/session/9add8cdb0a0bc888c0c70059de2f2217/cookie {}
+DEBUG: Starting new HTTP connection (2): localhost:45673
+DEBUG: http://localhost:45673 "GET /session/9add8cdb0a0bc888c0c70059de2f2217/cookie HTTP/11" 404 0
+DEBUG: Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=129.0.6668.89)","stacktrace":"#0 0x56a8fd61402a \u003Cunknown>\n#1 0x56a8fd2fa5e0 \u003Cunknown>\n#2 0x56a8fd2d01af \u003Cunknown>\n#3 0x56a8fd37703d \u003Cunknown>\n#4 0x56a8fd38d629 \u003Cunknown>\n#5 0x56a8fd36e8c3 \u003Cunknown>\n#6 0x56a8fd33c6b3 \u003Cunknown>\n#7 0x56a8fd33d68e \u003Cunknown>\n#8 0x56a8fd5dea2b \u003Cunknown>\n#9 0x56a8fd5e29b1 \u003Cunknown>\n#10 0x56a8fd5cb225 \u003Cunknown>\n#11 0x56a8fd5e3532 \u003Cunknown>\n#12 0x56a8fd5b038f \u003Cunknown>\n#13 0x56a8fd602f28 \u003Cunknown>\n#14 0x56a8fd6030f3 \u003Cunknown>\n#15 0x56a8fd612e7c \u003Cunknown>\n#16 0x77f5cb55639d \u003Cunknown>\n#17 0x77f5cb5db49c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x56a8fd61402a <unknown>
+#1 0x56a8fd2fa5e0 <unknown>
+#2 0x56a8fd2d01af <unknown>
+#3 0x56a8fd37703d <unknown>
+#4 0x56a8fd38d629 <unknown>
+#5 0x56a8fd36e8c3 <unknown>
+#6 0x56a8fd33c6b3 <unknown>
+#7 0x56a8fd33d68e <unknown>
+#8 0x56a8fd5dea2b <unknown>
+#9 0x56a8fd5e29b1 <unknown>
+#10 0x56a8fd5cb225 <unknown>
+#11 0x56a8fd5e3532 <unknown>
+#12 0x56a8fd5b038f <unknown>
+#13 0x56a8fd602f28 <unknown>
+#14 0x56a8fd6030f3 <unknown>
+#15 0x56a8fd612e7c <unknown>
+#16 0x77f5cb55639d <unknown>
+#17 0x77f5cb5db49c <unknown>
+
+INFO: Cookies saved to cookies.pkl
+ERROR: Ran out of input
