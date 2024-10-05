@@ -19,16 +19,16 @@ class Site(webdriver.Chrome):
       self.options.add_argument("--disable-popup-blocking")  # Prevents new tabs from opening
 
       if driver == "test":
-          super().__init__(options=self.options)  
+          self.driver = super().__init__(options=self.options)  
       elif driver == "profile":
           self.setup_profile()
-          super().__init__(options=self.options)  
+          self.driver = super().__init__(options=self.options)  
           self.get("https://wvc.instructure.com/login?needs_cookies=1")
       elif driver == "remote":
           self.options.add_experimental_option("debuggerAddress", "127.0.0.1:6080")
-          super().__init__(options=self.options)  # Initialize the base class
+          self.driver = super().__init__(options=self.options)  # Initialize the base class
       else:
-          super().__init__(options=self.options)  
+          self.driver = super().__init__(options=self.options)  
           self.options.add_argument('--headless')  
 
   def set_url(self, url):

@@ -18,14 +18,15 @@ logging.basicConfig(
 log = logging.getLogger(__name__) 
 
 class HomeworkApp:
-    def __init__(self, root):
+    def __init__(self, root, driver=''):
         self.root = root
         self.root.title("Homework Helper")
         self.frm = Frame(root)
         self.frm.grid(padx=10, pady=10)
+    
+        self.driver = None
 
         self.url_var = StringVar()
-        self.driver = None
         self.cookie_file = "cookies.pkl"
 
         self.setup_ui()
@@ -40,8 +41,6 @@ class HomeworkApp:
     def setup_ui(self):
         main_pady=3
         main_padx=3
-        if self.driver != None:
-            current_url = self.driver.current_url
         #row 0
         Label(self.frm, text="Enter HW URL:").grid(column=0, row=0, sticky=W, padx=main_padx, pady=main_pady)
         Entry(self.frm, textvariable=self.url_var).grid(column=1, row=0, sticky=W, padx=main_padx, pady=main_pady)
@@ -55,6 +54,7 @@ class HomeworkApp:
         Button(self.frm, text="Start", command=self.get_questions, width=15).grid(column=0, row=2, sticky=W, padx=main_padx, pady=main_pady)
         Button(self.frm, text="Pause", command=self.root.destroy, width=15).grid(column=1, row=2, sticky=W, padx=main_padx, pady=main_pady)
         Button(self.frm, text="Quit", command=self.root.destroy, width=15).grid(column=2, row=2, sticky=W, padx=main_padx, pady=main_pady)
+        Button(self.frm, text="Debug ", command=self.enter_iframes, width=15).grid(column=3, row=2, sticky=W, padx=main_padx, pady=main_pady)
     
     def remove_needs_cookie(self):
         current_url = self.driver.current_url()
@@ -76,7 +76,6 @@ class HomeworkApp:
         url = self.url_var.get().strip()
         self.set_url(url)
         # self.remove_needs_cookie()
-        
         try:
             with open(self.cookie_file, 'rb') as file:
                 cookies = pickle.load(file)
@@ -89,10 +88,12 @@ class HomeworkApp:
         except Exception as e:
             log.error(e)
     
+    def create_site(self):
+        if self.driver == None:
+            self.driver = Site("profile")
 
     def set_url(self, url=""):
-        if self.driver is None:
-            self.driver = Site("profile")  # Assuming Site is a class that initializes the driver
+        self.create_site()
         try:
             url = self.url_var.get().strip()
             self.driver.get(url)
@@ -136,45 +137,67 @@ class HomeworkApp:
     def check_question_type(self):
         print('lol')
 
-    def go_question_iframe(self):
+    def enter_iframes(self):
+        print("title: " + self.driver.title)
+        # enter 1st iframe
         try:
-            iframe_xpath = "//iframe[contains(@title, 'Question Viewer')]"
-            iframe_id = "contentFrame"
-            iframe_tag = "iframe"
-            self.driver.wait_for_all(By.TAG_NAME, iframe_tag)
-            question_iframe = self.driver.find_element(By.TAG_NAME, iframe_tag)
-            self.driver.switch_to.frame(question_iframe)
-            self.driver.implicitly_wait(2)
-            log.info("Sucessfully moved into iframe")
+            iframe1_xpath = "//iframe[contains(@title, 'Question Viewer')]"
+            self.driver.switch_to.frame(self.driver.find_element(By.XPATH, iframe1_xpath))
+            log.info("sucessfully entered 1st iframe")
         except Exception as e:
-            log.error(e)
+            log.info("couldnt get into the 1st iframe")
+            return
+        # enter 2nd iframe (questions/answers/selection for more questions)
+        try:
+            iframe2_xpath = "//iframe[contains(@id, 'activityFrame')]"
+            self.driver.switch_to.frame(self.driver.find_element(By.XPATH, iframe2_xpath))
+            log.info("sucessfully entered 2st iframe")
+        except Exception as e:
+            log.info("couldnt get into the 2st iframe")
+            return
+        self.in_iframes = True
+
+
+    # NEED TO SANITIZE see right for current output
+    # Thinking, have letter and the thing after it get the url of the ?
+    # Can send initial output to chatgpt, so keep that
+    def sanitize_questions(self):
+        mc_letters = "ABCDEF"
+        sanitized_questions = []
+        for line in self.mc_questions: # not sure if this gets all the ? yet
+            text = line.text.strip()
+            # question = ''.join(text) # need to eventually check if letter and then put in dict
+            questions = ''.join(text) # probably going to be the prompt (since this gets all of the ?)
+            
+            # sanitized_questions.extend(text.splitlines())
+        return questions
+        
     
     def get_questions(self):
+        if not self.in_iframes:
+            self.enter_iframes()
         #containers
-        self.go_question_iframe()
+        # self.go_question_iframe()
         top_question_container_xpath = "//div[contains(@id, 'top') and contains(@class, 'dijitContentPane')]"
-        mc_questions_xpath = "//span[@class='step'][.//div[@data-dojo-type='xl.player.controls.MultipleChoiceAnswer']]" # gets only questions and the mc choieces
+        mc_container_xpath = "//span[@class='step']"
+        mc_questions_xpath = ".//div[@data-dojo-type='xl.player.controls.MultipleChoiceAnswer']" # gets only questions and the mc choieces
         try:
             self.top_question = self.driver.find_element(By.XPATH, top_question_container_xpath)
             self.mc_questions = self.driver.find_elements(By.XPATH, mc_questions_xpath)
+            sanitized_questions = self.sanitize_questions()
             log.info(f"""Top Level Question:
 {self.top_question.text.strip()}                
+
 Mc Questions:
-{'\n'.join([question.text.strip() for question in self.mc_questions])}
+{sanitized_questions}
 """)
+# {([question.text.strip() for question in self.mc_questions])}
 # NEXT TO DO, MAKE SURE THIS WORKS X SEE IF I CAN MAKE SSO NOT REDIRECT OR HOW I CAN SSO WITH SELENIUM
         except AttributeError:
             log.info("No questions found (supported: mc)")
         except Exception as e:
             log.error(f"An error has occured {e}")
         
-    def create_driver(self, url=''):
-        if self.driver is None:
-            self.driver = Site("test")  # Assuming Site is a class that initializes the driver
-            # self.login()  # Login after initializing the driver
-        if url:
-            self.driver.set_url(url)  # Assuming set_url is a method of the Site class
-
 
 if __name__ == "__main__":
     root = Tk()
