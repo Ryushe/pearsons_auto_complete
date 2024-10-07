@@ -20,6 +20,11 @@ With all of that out of the way, how do we use this app to help us with school?
 
 1. `pip install -r requirements.txt`
 2. `python homeworkapp.py`
+3. make a file named `token.bin` in the root dir and put your ai api key into it
+
+## if don't have api key for ai (free)
+1. create an account at https://huggingface.co
+2. go to profile -> Acess Tokens -> click on create token -> read only -> copy token into `token.bin` file
 
 Thats it!!!!
 

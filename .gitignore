@@ -4,3 +4,4 @@ log*
 todo.md
 profiles/*
 !profiles/
+token*.bin
