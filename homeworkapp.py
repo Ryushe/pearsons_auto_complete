@@ -18,6 +18,7 @@ logging.basicConfig(
 )
 
 log = logging.getLogger(__name__) 
+logging.getLogger('selenium').setLevel(logging.WARNING)
 
 class HomeworkApp:
     def __init__(self, root, driver=''):
@@ -50,8 +51,8 @@ class HomeworkApp:
         
         #row 1
         Button(self.frm, text="Set URL", command=self.set_url, width=15).grid(column=0, row=1, sticky=W, padx=main_padx, pady=main_pady)
-        Button(self.frm, text="Go to Canvas", command=self.set_canvas_url, width=15).grid(column=1, row=1, sticky=W, padx=main_padx, pady=main_pady)
-        Button(self.frm, text="Load Canvas Cookies", command=self.load_cookies, width=15).grid(column=2, row=1, sticky=W, padx=main_padx, pady=main_pady)
+        Button(self.frm, text="Canvas no cookies", command=self.set_canvas_url, width=15).grid(column=1, row=1, sticky=W, padx=main_padx, pady=main_pady)
+        Button(self.frm, text="Canvas w/ cookies", command=self.load_cookies, width=15).grid(column=2, row=1, sticky=W, padx=main_padx, pady=main_pady)
         Button(self.frm, text="Save Cookies", command=self.save_cookies, width=15).grid(column=3, row=1, sticky=W, padx=main_padx, pady=main_pady)
         #row 2
         Button(self.frm, text="Solve Questions", command=self.solve_questions, width=15).grid(column=0, row=2, sticky=W, padx=main_padx, pady=main_pady)
@@ -139,7 +140,7 @@ class HomeworkApp:
 
     def debug(self):
         question = Question('path', 'answer')
-        answer = question.hugging_face("What is the color of the sky?") # right now will be preset what is color of sky
+        answer = question.query_ai("What is the color of the sky?") # right now will be preset what is color of sky
         print(answer)
 
     def enter_iframes(self):
@@ -177,18 +178,16 @@ class HomeworkApp:
         #
         # - before sending the prompt to ai, can check to see if question obj has radio button
         try:
-            # this will be the questions for that page/number on left
-            self.top_question = self.driver.find_element(By.XPATH, top_question_container_xpath)
+            top_question_element = self.driver.find_element(By.XPATH, top_question_container_xpath).text 
 
             questions = []
             mc_containers = self.driver.find_elements(By.XPATH, mc_container_xpath)
             for container in mc_containers:
                 ## Questions eg: what is the state of florida, Answers eg: * mc1 *mc2
                 try:
-                    # want to get the items based on their radio button label/maybe try inner--outer html
                     mc_question_element = container.find_element(By.XPATH, mc_question_xpath)
                     mc_answer_elements = container.find_elements(By.XPATH, mc_choices_xpath)
-                    question_box = Question(mc_question_element, mc_answer_elements)
+                    question_box = Question(top_question_element, mc_question_element, mc_answer_elements)
                     questions.append(question_box)
                 except:
                     print("question invalid, skipped")
@@ -200,32 +199,31 @@ class HomeworkApp:
             log.info("No questions found (supported: mc)")
         except Exception as e:
             log.error(f"{e}")
-    
-    def get_answer_text(self, answer_elements):
-        print('lol')
-
-        return click_path, letter
-    
-    def get_question_input(self, question_elements):
-        return question_elements.find_elements(By.XPATH, ".//input[contains(@type, 'radio')]")
 
     def solve_questions(self):
         if not self.in_iframes:
             self.enter_iframes()
-        letters = "ABCDEF"
         questions = self.get_mc_questions()
-        for question in questions:
+        for question in questions: # on the page
             try:
-                print(question.get_question()) # works
+                top_question = question.get_top_question()
+                question_query = question.get_question() # works
             except:
                 print("cant get question")
             try:
-                answers = question.get_answers() # works, but want to be able to get elements within questions class
-                for answer in answers:
-                    # if answer in letters:
-                    print(answer)
+                answers, answer_query = question.get_mc_answers() # {B{question: url}} (should work)
             except:
                 print("cant get answers")
+
+            try:
+                ai_query = question.format_ai_query(top_question, question_query, answer_query)
+                response = question.query_ai(ai_query)
+                print(response)
+            except:
+                print("if your seeing this its probably a catch 22")
+            # only doing 1 question, and 1st questin it dtries is WIERD
+            # need to add the option to go to new page
+            
 
 if __name__ == "__main__":
     root = Tk()
