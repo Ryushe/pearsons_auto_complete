@@ -19,7 +19,6 @@ logging.basicConfig(
 
 log = logging.getLogger(__name__) 
 
-
 class HomeworkApp:
     def __init__(self, root, driver=''):
         self.root = root
@@ -111,9 +110,6 @@ class HomeworkApp:
         canvas_url = "https://wvc.instructure.com/login?needs_cookies=1"
         self.set_url(canvas_url)
     
-    def query_chatgpt(self):
-        print('lol')
-    
     def do_multiple_choice(self):
         print("lol")
     
@@ -146,8 +142,6 @@ class HomeworkApp:
         answer = question.hugging_face("What is the color of the sky?") # right now will be preset what is color of sky
         print(answer)
 
-
-
     def enter_iframes(self):
         print("title: " + self.driver.title)
         # enter 1st iframe
@@ -173,8 +167,6 @@ class HomeworkApp:
     # Can send initial output to chatgpt, so keep that
     
     def get_mc_questions(self) -> List[Question]:
-        if not self.in_iframes:
-            self.enter_iframes()
         #containers
         top_question_container_xpath = "//div[contains(@id, 'top') and contains(@class, 'dijitContentPane')]"
         mc_container_xpath = "//span[@class='step']"
@@ -193,6 +185,7 @@ class HomeworkApp:
             for container in mc_containers:
                 ## Questions eg: what is the state of florida, Answers eg: * mc1 *mc2
                 try:
+                    # want to get the items based on their radio button label/maybe try inner--outer html
                     mc_question_element = container.find_element(By.XPATH, mc_question_xpath)
                     mc_answer_elements = container.find_elements(By.XPATH, mc_choices_xpath)
                     question_box = Question(mc_question_element, mc_answer_elements)
@@ -207,17 +200,29 @@ class HomeworkApp:
             log.info("No questions found (supported: mc)")
         except Exception as e:
             log.error(f"{e}")
-        
+    
+    def get_answer_text(self, answer_elements):
+        print('lol')
+
+        return click_path, letter
+    
+    def get_question_input(self, question_elements):
+        return question_elements.find_elements(By.XPATH, ".//input[contains(@type, 'radio')]")
+
     def solve_questions(self):
+        if not self.in_iframes:
+            self.enter_iframes()
+        letters = "ABCDEF"
         questions = self.get_mc_questions()
         for question in questions:
             try:
-                print(question.get_question())
+                print(question.get_question()) # works
             except:
                 print("cant get question")
             try:
-                answers = question.get_answers()
+                answers = question.get_answers() # works, but want to be able to get elements within questions class
                 for answer in answers:
+                    # if answer in letters:
                     print(answer)
             except:
                 print("cant get answers")
