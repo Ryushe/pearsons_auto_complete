@@ -1,4 +1,5 @@
 import tkinter as Tk
+import time
 from typing import List
 from tkinter.ttk import *
 from tkinter import *
@@ -51,9 +52,9 @@ class HomeworkApp:
         
         #row 1
         Button(self.frm, text="Set URL", command=self.set_url, width=15).grid(column=0, row=1, sticky=W, padx=main_padx, pady=main_pady)
-        Button(self.frm, text="Canvas no cookies", command=self.set_canvas_url, width=15).grid(column=1, row=1, sticky=W, padx=main_padx, pady=main_pady)
-        Button(self.frm, text="Canvas w/ cookies", command=self.load_cookies, width=15).grid(column=2, row=1, sticky=W, padx=main_padx, pady=main_pady)
-        Button(self.frm, text="Save Cookies", command=self.save_cookies, width=15).grid(column=3, row=1, sticky=W, padx=main_padx, pady=main_pady)
+        Button(self.frm, text="Canvas w/ cookies", command=self.load_cookies, width=15).grid(column=1, row=1, sticky=W, padx=main_padx, pady=main_pady)
+        Button(self.frm, text="Save Cookies", command=self.save_cookies, width=15).grid(column=2, row=1, sticky=W, padx=main_padx, pady=main_pady)
+        Button(self.frm, text="Delete Cookies", command=self.delete_cookies, width=15).grid(column=3, row=1, sticky=W, padx=main_padx, pady=main_pady)
         #row 2
         Button(self.frm, text="Solve Questions", command=self.solve_questions, width=15).grid(column=0, row=2, sticky=W, padx=main_padx, pady=main_pady)
         Button(self.frm, text="Pause", command=self.root.destroy, width=15).grid(column=1, row=2, sticky=W, padx=main_padx, pady=main_pady)
@@ -72,9 +73,18 @@ class HomeworkApp:
         try:
             with open(self.cookie_file, 'wb') as file:
                 pickle.dump(self.driver.get_cookies(), file)
+            log.info("Saved Cookies")
             file.close()
         except Exception as e:
             log.error(e)
+    
+    def delete_cookies(self):
+        try:
+            if os.path.exists(self.cookie_file):
+                os.remove(self.cookie_file)
+            self.driver.delete_all_cookies()
+        except Exception as e:
+            log.info("Error clearing cookies")
 
     def load_cookies(self):
         url = self.url_var.get().strip()
@@ -120,7 +130,7 @@ class HomeworkApp:
 
         for span in spans:
             text_content = span.text.strip()
-            print(f"Found span with text: {text_content}")
+            log.info(f"Found span with text: {text_content}")
 
             try:
                 checkbox_xpath = ".//following::input[@type='checkbox'][1]"  # Finds the first checkbox following the span
@@ -129,9 +139,9 @@ class HomeworkApp:
                 # Check the checkbox if it's not already checked
                 if not checkbox.is_selected():
                     checkbox.click()
-                    print(f"Checked the checkbox related to: {text_content}")
+                    log.info(f"Checked the checkbox related to: {text_content}")
                 else:
-                    print(f"Checkbox already checked for: {text_content}")
+                    log.info(f"Checkbox already checked for: {text_content}")
             
             except Exception as e:
                 print(f"Could not find or check the checkbox for: {text_content} - {e}")
@@ -144,7 +154,7 @@ class HomeworkApp:
         print(answer)
 
     def enter_iframes(self):
-        print("title: " + self.driver.title)
+        log.info("title: " + self.driver.title)
         # enter 1st iframe
         try:
             iframe1_xpath = "//iframe[contains(@title, 'Question Viewer')]"
@@ -162,10 +172,6 @@ class HomeworkApp:
             log.info("couldnt get into the 2st iframe")
             return
         self.in_iframes = True
-
-    # NEED TO SANITIZE see right for current output
-    # Thinking, have letter and the thing after it get the url of the ?
-    # Can send initial output to chatgpt, so keep that
     
     def get_mc_questions(self) -> List[Question]:
         #containers
@@ -178,7 +184,7 @@ class HomeworkApp:
         #
         # - before sending the prompt to ai, can check to see if question obj has radio button
         try:
-            top_question_element = self.driver.find_element(By.XPATH, top_question_container_xpath).text 
+            top_question_container = self.driver.find_element(By.XPATH, top_question_container_xpath)
 
             questions = []
             mc_containers = self.driver.find_elements(By.XPATH, mc_container_xpath)
@@ -187,57 +193,65 @@ class HomeworkApp:
                 try:
                     mc_question_element = container.find_element(By.XPATH, mc_question_xpath)
                     mc_answer_elements = container.find_elements(By.XPATH, mc_choices_xpath)
-                    question_box = Question(top_question_element, mc_question_element, mc_answer_elements)
+                    question_box = Question(top_question_container, mc_question_element, mc_answer_elements)
                     questions.append(question_box)
                 except:
-                    print("question invalid, skipped")
+                    log.info("question invalid, skipped")
             return questions
 
-# {([question.text.strip() for question in self.mc_questions])}
-# NEXT TO DO, MAKE SURE THIS WORKS X SEE IF I CAN MAKE SSO NOT REDIRECT OR HOW I CAN SSO WITH SELENIUM
         except AttributeError:
             log.info("No questions found (supported: mc)")
         except Exception as e:
             log.error(f"{e}")
+        
+    def get_prompt_items(self, question):
+        print("lol")
 
     def solve_questions(self):
         if not self.in_iframes:
             self.enter_iframes()
-        questions = self.get_mc_questions()
-        for question in questions: # on the page
+        page_questions = self.get_mc_questions()
+        for question in page_questions: # on the page
+            #get question and the main question (at the top)
             try:
+                question_query = question.get_question() 
                 top_question = question.get_top_question()
-                question_query = question.get_question() # works
             except:
-                print("cant get question")
+                log.warning("cant get question")
+            #get answers & dict
             try:
-                answers, answer_query = question.get_mc_answers() # {B{question: url}} (should work)
+            # need to check if answers, and if not dont add the question
+                answers_dict, answer_query = question.get_mc_answers() # {B{question: url}} (should work)
             except:
-                print("cant get answers")
-
+                log.warning("cant get answers")
+            #query ai
             try:
+                log.info("Getting answer from ai")
+                time.sleep(3)
                 ai_query = question.format_ai_query(top_question, question_query, answer_query)
+                print("ai query = ", ai_query)
                 response = question.query_ai(ai_query)
-                print(response)
+                time.sleep(3)
+                print(f"response = {response}")
             except:
-                print("if your seeing this its probably a catch 22")
-            # only doing 1 question, and 1st questin it dtries is WIERD
-            # need to add the option to go to new page
+                log.warning("error querying the ai\n")
+            
+            try:
+                correct_letter = response.lstrip()[0].lower() # gets abc.. (removes ' ')
+                if correct_letter.isalpha(): # is response a letter
+                    print(f"letter: {correct_letter} is valid")
+                    print(f"url for {correct_letter} is {answers_dict[correct_letter]}")
+                else: 
+                    print(f"{correct_letter} not a letter")
+            except Exception as e:
+                print("Something happened when comparing a the letter")
+                print(e)
+                
+            # AI works, now need to only get mc questions
+            # make click if response.lower() == letter
             
 
 if __name__ == "__main__":
     root = Tk()
     app = HomeworkApp(root)
     root.mainloop()
-
-# this js grabs the data
-#     var xpath = "//span[contains(@class, 'rvTxt') and normalize-space(text()) != '']"; // XPath to find span elements with class rvTxt and non-empty text
-# var result = document.evaluate(xpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-
-# // Loop through the results, starting from the second item
-# for (var i = 0; i < result.snapshotLength; i++) {
-#     var textContent = result.snapshotItem(i).textContent; // Get the text content
-#     console.log(textContent.trim()); // Print the text content without leading/trailing whitespace
-# }
-
-

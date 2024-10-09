@@ -19,8 +19,8 @@ I am NOT responsible for what happens to you or your account if you so chose to 
 With all of that out of the way, how do we use this app to help us with school?
 
 1. `pip install -r requirements.txt`
-2. `python homeworkapp.py`
-3. make a file named `token.bin` in the root dir and put your ai api key into it
+2. make a file named `token.bin` in the root dir and put your ai api key into it
+3. `python homeworkapp.py`
 
 ## if don't have api key for ai (free)
 1. create an account at https://huggingface.co
@@ -38,3 +38,13 @@ Now, you will be presented with an interface that has the options:
     - NOTE: it will only go in chronological order
 - Pause - Pause the app for whatever reason
 - Quit - Exits the app properly
+
+# Trouble shooting
+Q: Canvas is stuck on can't load cookies
+A:
+- ensure cookies are enabled (within chrome settings)
+- try resaving cookies and then reloading page
+- try navigating to other parts of the site
+    -  eg: click on dashboard, groups, etc
+- if all else fails delete cookies within chrome settings 
+  - click delete cookies button and relaunch app
