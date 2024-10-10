@@ -25,16 +25,15 @@ Give me ONLY the letter of the correct answer (no explanation) """
         return query
 
     def query_ai(self, query): 
-        if self.TOKEN:
-            client = InferenceClient(token=self.TOKEN)
-            result = client.text_generation(query)
-            return result
-        else:
+        if not self.TOKEN:
             print("Sorry no token was found please add one withen token.bin")
             print("Now exiting")
             sys.exit()
+        client = InferenceClient(token=self.TOKEN, model="mistralai/Mistral-Nemo-Instruct-2407")
+        result = client.text_generation(query)
+        return result
     
-    def sanitize_text(self, text):
+    def sanitize_text(self, text) -> str:
         return re.sub(r'[\n\u200B\u00A0]', '', text) # newline, wierd white spaces, non-breaking spaces
         # text_array = text.split('\n')
         # also for i, j while <len(text)
@@ -54,32 +53,56 @@ Give me ONLY the letter of the correct answer (no explanation) """
         top_question = ' '.join(full_text).replace(' ,', ',').strip()
         return top_question
 
-    def get_mc_answers(self):
-        answers = {}
-        answer_query = ""
-        letters = "abcdef"
-        for answer in self.answer_elements:
-            try:
-                url = answer.find_element(By.XPATH, ".//input[contains(@type, 'radio')]")
-                text = url.get_attribute("aria-label") #hehe radio label had text
-                sanitized_text = self.sanitize_text(text)
-                letter = sanitized_text[0][0]
-                if not any(letter in letter.lower() for letter in letters):
-                    return
-                answers[letter.lower()] = url # pretty sure works
-                answer_query += sanitized_text + "\n"
-            except Exception as e:
-                print("Error retrieving text from answer")
-
-        return answers, answer_query
-
     def get_question(self):
         try:
             print("QUESTION -------------------------------")
-            return self.question_element.text.strip()
+            question = self.question_element.text.strip()
+            return question
         except Exception as e:
             print(e)
             
+    def get_question_type(self):
+        input_types = ['radio', 'alternative'] # can add more
+        input_element = ''
+        answer = self.answer_elements[0] # checks the 1st index FOR ALL of the questons on the page
+        print("answer that I am checking", answer.text)
+        for input_type in input_types:
+            try:
+                input_element = answer.find_element(By.XPATH, f".//input[@type='{input_type}']")
+                if input_element:
+                    return input_type
+            except Exception as e:
+                print(f"not a {input_type}")
+                continue # allows it to try the next input type
+        return None
+    
+    def get_mc(self): # try putting below in get_ansewers, and only changing the input type
+        for answer in self.answer_elements:
+            try:
+                url = answer.find_element(By.XPATH, ".//input[@type='radio']")
+                text = url.get_attribute("aria-label") #hehe radio label had text
+                sanitized_text = self.sanitize_text(text)
+                letter = sanitized_text[0]
+                if letter.lower() not in self.letters:
+                    return
+                print(f"letter = {letter.lower()}")
+                self.answers[letter.lower()] = url # pretty sure works
+                self.answer_query += sanitized_text + "\n"
+            except Exception as e:
+                print("Error retrieving text from answer")
+                print(e)
+
+        return self.answers, self.answer_query
+
+    def get_answers(self, question_type):
+        self.answers = {}
+        self.answer_query = ""
+        self.letters = "abcdef"
+        if question_type == "radio":
+            answers, answer_query = self.get_mc()
+            return answers, answer_query
+        else:
+            return {}, ""
     
     def click_answer(self, driver, answer_text):
         """Clicks the correct answer based on the text provided"""

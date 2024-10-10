@@ -145,8 +145,6 @@ class HomeworkApp:
             
             except Exception as e:
                 print(f"Could not find or check the checkbox for: {text_content} - {e}")
-    def check_question_type(self):
-        print('lol')
 
     def debug(self):
         question = Question('path', 'answer')
@@ -174,6 +172,8 @@ class HomeworkApp:
         self.in_iframes = True
     
     def get_mc_questions(self) -> List[Question]:
+        # mc_wait_path = "//span[@class='step']/following::div[contains(@class, 'addblank')]"
+        # self.driver.wait_for(By.XPATH, mc_wait_path)
         #containers
         top_question_container_xpath = "//div[contains(@id, 'top') and contains(@class, 'dijitContentPane')]"
         mc_container_xpath = "//span[@class='step']"
@@ -196,6 +196,7 @@ class HomeworkApp:
                     questions.append(question_box)
                 except:
                     log.info("question invalid, skipped")
+                    log.error(e)
             return questions
 
         except AttributeError:
@@ -203,7 +204,7 @@ class HomeworkApp:
         except Exception as e:
             log.error(f"{e}")
     
-    def get_question_data(self, question: Question):
+    def get_question_query(self, question: Question):
         #get question and the main question (at the top)
         answer_query = ''
         try:
@@ -232,13 +233,12 @@ class HomeworkApp:
     def solve_questions(self):
         if not self.in_iframes:
             self.enter_iframes()
-        time.sleep(4) # should fix not getting 1st wuestion
         page_questions = self.get_mc_questions() 
         for question in page_questions: # on the page
-            question_data = self.get_question_data(question)
-            if question_data:
-                if len(question_data) == 4:
-                    top_question, question_query, answer_query, answers_dict = question_data
+            question_query = self.get_question_query(question)
+            if question_query:
+                if len(question_query) == 4:
+                    top_question, question_query, answer_query, answers_dict = question_query
                 else:
                     log.info("question didn't have every attribute, skipping")
                     continue 
@@ -273,13 +273,6 @@ class HomeworkApp:
             # make only get mc questions (error in get_type logic): keeps the last type
             # INSTEAD of how im handling the answers, i could search for "the correct answer is"...
             # make click if response.lower() == letter
-
-            # because checking locally, and not getting the question data for the other ? when i check to see what kind of ? it is it uses the one before if it doesn't exist
-                # the indexing becomes wrong, due to the questions being longer than the aswer array
-                # not sure y - ISSUE is that the data from the ? before gets put into the next ? if no data
-
-                
-            
             
 
 if __name__ == "__main__":
