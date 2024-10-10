@@ -6,9 +6,9 @@ from selenium.webdriver.common.by import By
 from huggingface_hub import InferenceClient
 
 class Question():
-    def __init__(self, top_question_container:WebElement, question_elements: WebElement, answer_elements: List[WebElement]):
+    def __init__(self, top_question_container:WebElement, question, answer_elements: List[WebElement]):
         self.top_question_container = top_question_container
-        self.question_element = question_elements
+        self.question = question
         self.answer_elements = answer_elements 
         with open('token.bin', 'r') as token_file:
             self.TOKEN = token_file.readline()
@@ -56,27 +56,29 @@ Give me ONLY the letter of the correct answer (no explanation) """
     def get_question(self):
         try:
             print("QUESTION -------------------------------")
-            question = self.question_element.text.strip()
+            # question = self.question_element.text.strip()
+            question = self.question
             return question
         except Exception as e:
             print(e)
             
-    def get_question_type(self):
+    def get_question_type(self): # why does this always return radio
+        print(f"Current question = {self.question}")
         input_types = ['radio', 'alternative'] # can add more
-        input_element = ''
-        answer = self.answer_elements[0] # checks the 1st index FOR ALL of the questons on the page
-        print("answer that I am checking", answer.text)
-        for input_type in input_types:
-            try:
-                input_element = answer.find_element(By.XPATH, f".//input[@type='{input_type}']")
-                if input_element:
+        # answer = self.answer_elements[0] # checks the 1st index FOR ALL of the questons on the page
+        print(f"Length of answer elements = {len(self.answer_elements)}")
+        for answer in self.answer_elements:
+            print("answer that I am checking", answer.text)
+            for input_type in input_types:
+                try:
+                    input_element = answer.find_element(By.XPATH, f".//input[@type='{input_type}']")
                     return input_type
-            except Exception as e:
-                print(f"not a {input_type}")
-                continue # allows it to try the next input type
+                except Exception as e:
+                    print(f"not a {input_type}")
+                    continue # allows it to try the next input type
         return None
     
-    def get_mc(self): # try putting below in get_ansewers, and only changing the input type
+    def get_mc(self): 
         for answer in self.answer_elements:
             try:
                 url = answer.find_element(By.XPATH, ".//input[@type='radio']")
@@ -104,15 +106,7 @@ Give me ONLY the letter of the correct answer (no explanation) """
         else:
             return {}, ""
     
-    def click_answer(self, driver, answer_text):
+    def click_answer(self, url: WebElement):
         """Clicks the correct answer based on the text provided"""
-        if answer_text in self.answers:
-            index = self.answers.index(answer_text)
-            answer_id = self.answer_ids[index]
-            
-            # Find the answer element by its ID and click it
-            element = driver.find_element_by_id(answer_id)
-            element.click()
-        else:
-            print(f"Answer '{answer_text}' not found for question '{self.question_text}'.")
+        url.click()
 

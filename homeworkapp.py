@@ -149,9 +149,34 @@ class HomeworkApp:
         print('lol')
 
     def debug(self):
-        question = Question('path', 'answer')
-        answer = question.query_ai("What is the color of the sky?") # right now will be preset what is color of sky
-        print(answer)
+        questions = self.driver.execute_script("""
+let elements = document.evaluate("//span[@class='step']/following::div[contains(@class, 'addblank')]", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+
+let questions = []
+for (let i = 0; i < elements.snapshotLength; i++) {
+    console.log(elements.snapshotItem(i).textContent.trim());
+    questions.push(elements.snapshotItem(i).textContent.trim())
+    }
+    return questions""")
+    
+        for question in questions:
+            print(question)
+
+    def js_get_questions(self):
+        questions = self.driver.execute_script("""
+let elements = document.evaluate("//span[@class='step']/following::div[contains(@class, 'addblank')]", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+
+let questions = []
+for (let i = 0; i < elements.snapshotLength; i++) {
+    console.log(elements.snapshotItem(i).textContent.trim());
+    questions.push(elements.snapshotItem(i).textContent.trim())
+    }
+    return questions""")
+    
+        for question in questions:
+            print(question)
+        questions = [""] + questions # try to align the data with the ? 
+        return questions
 
     def enter_iframes(self):
         log.info("title: " + self.driver.title)
@@ -172,7 +197,7 @@ class HomeworkApp:
             log.info("couldnt get into the 2st iframe")
             return
         self.in_iframes = True
-    
+
     def get_mc_questions(self) -> List[Question]:
         #containers
         top_question_container_xpath = "//div[contains(@id, 'top') and contains(@class, 'dijitContentPane')]"
@@ -185,18 +210,23 @@ class HomeworkApp:
         try:
             top_question_container = self.driver.find_element(By.XPATH, top_question_container_xpath)
 
-            questions = []
+            return_questions = []
             mc_containers = self.driver.find_elements(By.XPATH, mc_container_xpath)
-            for container in mc_containers:
+            questions = self.js_get_questions() # will be an array
+            
+            for container, question in zip(mc_containers, questions):
+            # for container in mc_containers:
                 ## Questions eg: what is the state of florida, Answers eg: * mc1 *mc2
                 try:
-                    mc_question_element = container.find_element(By.XPATH, mc_question_xpath)
+                    trial_shitter = container.find_elements(By.XPATH, mc_question_xpath) # hopefully inits the rest of the ob
+                    # mc_question = questions_to_be_answered[question_index]
                     mc_answer_elements = container.find_elements(By.XPATH, mc_answers_xpath)
-                    question_box = Question(top_question_container, mc_question_element, mc_answer_elements)
-                    questions.append(question_box)
-                except:
-                    log.info("question invalid, skipped")
-            return questions
+                    question_box = Question(top_question_container, question, mc_answer_elements)
+                    return_questions.append(question_box)
+                except Exception as e:
+                    log.error(e)
+            del return_questions[0] # trying to align everything
+            return return_questions
 
         except AttributeError:
             log.info("No questions found (supported: mc)")
@@ -206,16 +236,17 @@ class HomeworkApp:
     def get_question_data(self, question: Question):
         #get question and the main question (at the top)
         answer_query = ''
-        try:
+        try: # WORKS
             question_query = question.get_question() 
             top_question = question.get_top_question()
-            question_type = question.get_question_type()
-            print(f"question_type = {question_type}")
-            if question_type is None:
-                return None
         except Exception as e:
             log.warning("cant get question")
             log.warning(e)
+        try:
+            question_type = question.get_question_type()
+            print(f"question_type = {question_type}")
+        except Exception as e:
+            print(e)
         #get answers & dict
         try:
             # could check to see if question exists before this (limiting ai calls)
@@ -229,12 +260,21 @@ class HomeworkApp:
         else: 
             return None
 
+    
+    def init_questions(self):
+        """Logic behind, can't get 1st then when js with fresh page no work as well"""
+        """This aims to find all elements ensuring they all have been touched/initialized"""
+        self.driver.find_elements(By.XPATH, "//span[@class='step']/following::div[contains(@class, 'addblank')]")
+
     def solve_questions(self):
         if not self.in_iframes:
             self.enter_iframes()
-        time.sleep(4) # should fix not getting 1st wuestion
+
+        # self.driver.implicitly_wait(3)# should fix not getting 1st wuestion
+        self.driver.wait_for_all(By.XPATH, "//span[@class='step']/following::div[contains(@class, 'addblank')]", self.driver)
+
         page_questions = self.get_mc_questions() 
-        for question in page_questions: # on the page
+        for question in page_questions:
             question_data = self.get_question_data(question)
             if question_data:
                 if len(question_data) == 4:
@@ -260,13 +300,17 @@ class HomeworkApp:
             try:
                 correct_letter = response.lstrip()[0].lower() # gets abc.. (removes ' ')
                 if correct_letter.isalpha(): # is response a letter
-                    print(f"letter: {correct_letter} is valid")
+                    print(f"For question: {question.get_question()}")
+                    print(f"clicking option: {correct_letter}")
                     print(f"url for {correct_letter} is {answers_dict[correct_letter]}")
+                    answer = answers_dict[correct_letter]
+                    question.click_answer(answer)
                 else: 
                     print(f"{correct_letter} not a letter")
             except Exception as e:
                 print("Something happened when comparing a the letter")
                 print(e)
+            
                 
             # AI works
             # ai still cooked FUCK ME (wrong answers and sometimes have a random :) - just need better ai
@@ -278,7 +322,38 @@ class HomeworkApp:
                 # the indexing becomes wrong, due to the questions being longer than the aswer array
                 # not sure y - ISSUE is that the data from the ? before gets put into the next ? if no data
 
+            # due to not getting first question, indexes thrown off causing the input 1? == 2a 2? ==3a
+                # this leads to the bottom question being a radio, because its given the wrong input
+
+            # not getting 1st qweston pushes everything (getting everything else)
+            # issue with this is even me waiting forever, i am not getting it
+            # BIG DISCOVERY, elements aernt loaded till clicked on, meaning need to click on an element before i can read anything
+                # see if you can click the top section and then if it loads sick 
+                    # this would mean clicking the top activates the elements allowing us to pull the top question
+                # debug will allow me to test if it works or not or use code below
+                """
+let elements = document.evaluate("//span[@class='step']/following::div[contains(@class, 'addblank')]", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+
+for (let i = 0; i < elements.snapshotLength; i++) {
+    console.log(elements.snapshotItem(i).textContent.trim());
+}
+                """
                 
+    """
+const xpath = "//span[@class='step']/following::div[contains(@class, 'addblank')]";
+const result = document.evaluate(xpath, document, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+
+let node;
+const questions = [];
+
+// Iterate through all matching nodes
+while (node = result.iterateNext()) {
+    questions.push(node.textContent.trim());  // Push the text content to the array
+}
+
+// Print each question's text content to the console
+questions.forEach(question => console.log(question));
+    """
             
             
 

@@ -53,13 +53,13 @@ class Site(webdriver.Chrome):
     button = self.driver.find_element(method, button_id)
     button.click()
   
-  def wait_for(self, method, id, time=10):
-    wait = WebDriverWait(self.driver, time)
+  def wait_for(self, method, id, driver, time=10):
+    wait = WebDriverWait(driver, time)
     wait.until(EC.presence_of_element_located((method, id)))
   
-  def wait_for_all(self, method, ids, time=10):
-    wait = WebDriverWait(self.driver, time)
-    wait.until(EC.presence_of_all_elements_located((method, ids)))
+  def wait_for_all(self, method, id, driver, time=10):
+    wait = WebDriverWait(driver, time)
+    wait.until(EC.presence_of_all_elements_located((method, id)))
   
   def get_containers(self, id, method=By.CLASS_NAME):
     containers = self.driver.find_elements(method, id)
